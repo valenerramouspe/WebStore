@@ -1,42 +1,44 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
-body{
-	background-color: #00B7FF
-}
-
-a {
-  color: #00B7FF;
-}
-
-.homepage{
-	height: 800px;
+.homepage {
+	height: 700px;
 	background-image: url(http://static.boredpanda.com/blog/wp-content/uploads/2017/03/people-match-books-librairie-mollat-2-58bd703d3a5b3__700.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+  background-repeat: no-repeat;
+	background-size: auto 100%;
 	margin-bottom: 0px;
 }
 
-.title{
-	color: white;
+#home_half_container {
+  float: right;
+	margin-right: 100px;
+	margin-top: 200px;
 }
 
-
-#button_container{
+#home_button_container {
 	float: right;
-	margin-right: 250px;
+	margin-right: 100px;
 	margin-top: 200px;
 	width: 100px;
 	height: 50px;
 }
-.boton{
-	background-color: white;
+
+.button {
+	background-color: #bfbfbf;
 	border: none;
 	text-align: center;
 	font-size: 25px;
 	border-radius: 8px;
 	padding: 15px 32px;
 	width: 250px
+}
+
+#form_container {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.sidebar_image {
+  width: 100%;
 }

@@ -40,12 +40,12 @@ router.post('/comment/:id', (req, res, next) => {
     if (err) {
       throw new Error('Failed to create comment');
     }
-    product.findById({ _id: req.params.id }, (err, findProduct) => {
+    product.findById({ _id: req.params.id }, (err, foundProduct) => {
       if (err) {
         throw new Error('Could not find product');
       }
-      findProduct.comment.push(newComment);
-      findProduct.save();
+      foundProduct.comment.push(newComment);
+      foundProduct.save(); // Saving the change I've made to product
       res.send('ok!');
     });
   });

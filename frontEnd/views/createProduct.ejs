@@ -1,10 +1,21 @@
-<h2>Create a new product</h2>
-<form action="/products" method="post">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-	<input type="text" name="name" placeholder="Book name">
-	<input type="text" name="price" placeholder="Book price">
-	<input type="text" name="description" placeholder="Book description">
-	<input type="text" name="image" placeholder="image URL">
-	<input type="submit" name="submit">
+<!-- Create product form start-->
+<div class="container" id="form_container">
 
-</form>
+	<h2>Create a new product</h2><br>
+	<form action="/products" method="post">
+
+		<h3>Enter product name:</h3>
+			<input type="text" name="name" placeholder="Book name"><br><br>
+		<h3>Enter product price:</h3>
+			<input type="text" name="price" placeholder="Book price"><br><br>
+		<h3>Enter product description:</h3>
+			<input type="text" name="description" placeholder="Book description"><br><br>
+		<h3>Enter link to product image</h3>
+			<input type="text" name="image" placeholder="image URL"><br><br>
+			<input type="submit" name="submit">
+
+	</form>
+
+</div>
