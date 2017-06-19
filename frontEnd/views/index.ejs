@@ -8,6 +8,7 @@
   <script src ="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/styleAllProducts.css">
 </head>
 
 <body>
@@ -18,43 +19,29 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="#">Book Store</a>
+    <a class="navbar-brand a" id="linkToHome">Book Store</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">All Products<span class="sr-only">(current)</span></a>
+          <a class="nav-link a" id="linkToAllProducts">All Products<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" >Create Product</a>
+          <a class="nav-link" id="linkToCreate">Create Product</a>
         </li>
       </ul>
-
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>Search
-        </button>
-      </form>
-
+      
     </div>
 
   </nav>
 
-<!--Jumbotron start-->
-  <div class="jumbotron homepage">
-
-    <div id="home_half_container">
-      <h1 class="display-3">Book Store</h1>
-      <p class="lead">Reading is dreaming with open eyes</p>
-      <div id="home_button_container">
-        <button class=button type="button">See All Books</button>
-      </div>
-    </div>
+<!-- Dinamic page start -->
+  <div class="controlContainer">
 
   </div>
+
+<script type="text/javascript" src="../scripts/controller.js"></script>
 
 </body>
 
