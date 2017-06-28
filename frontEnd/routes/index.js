@@ -79,8 +79,26 @@ router.get('/', function(req, res, next) {
 
   });
 
-router.get('/singleproduct', (req, res, next) => {
-  res.render('singleProductView', { title: 'Book Store' });
+router.get('/products/:id', (req, res, next) => {
+  res.send({
+      id: 1,
+      imageURL: 'https://about.canva.com/wp-content/uploads/sites/3/2015/01/creative_bookcover.png',
+      name: 'asdas',
+      price: 12,
+      description: 'description'
+    })
+  //res.render('singleProductView', { title: 'Book Store', id: req.params.id });
+});
+
+router.post('/products', (req, res, next) => {
+  /*res.send({
+      id: 1,
+      imageURL: 'https://about.canva.com/wp-content/uploads/sites/3/2015/01/creative_bookcover.png',
+      name: 'asdas',
+      price: 12,
+      description: 'description'
+    })*/
+    res.send('ok')
 });
 
 

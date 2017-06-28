@@ -25,7 +25,8 @@ router.get('/products/:id', (req, res, next) => {
 });
 
 router.post('/products', (req, res, next) => {
-  console.log(req.body);
+  console.log('entro al back');
+  console.log(req.body)
   product.create(req.body, (err, data) => {
     if (err) {
       throw new Error('Bad product creation');
